@@ -1,4 +1,4 @@
-# 🌾 Ecos de la Pampa
+# Ecos de la Pampa
 
 **Ecos de la Pampa** es una plataforma digital que busca preservar la memoria viva de Santa Cruz, Guanacaste. Un museo web donde las voces, las anécdotas y los rostros de la bajura encuentran un espacio para trascender el tiempo.
 
