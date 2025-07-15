@@ -1,0 +1,39 @@
+---
+import SecondaryButtom from "@/SecondaryButtom.astro";
+import Carousel from "@/Carousel.astro";
+---
+
+<section
+  class="w-[1200px] h-[755px] flex items-center justify-center mx-auto pt-[100px]"
+>
+  <div class="w-full h-full flex">
+    <div class="w-[773px] pr-16">
+      <h1
+        class="text-[80px] font-extrabold italic text-primary-300"
+        style="filter: drop-shadow(4px 4px 3px rgba(132, 124, 254, 1));"
+      >
+        Ecos de la pampa
+      </h1>
+      <h2
+        class="text-[40px] font-medium italic text-primary-100"
+        style="filter: drop-shadow(4px 4px 3px rgba(132, 124, 254, 1));"
+      >
+        Celebrando la identidad de nuestra tierra
+      </h2>
+      <div class="mb-6">
+        <p class="text-2xl font-normal text-primary-600">
+          Ecos de la pampa es una plataforma digital que nace desde el cariño y
+          la admiración por los personajes que han dado forma a la cultura viva
+          de Santa Cruz, Guanacaste. Es un museo en línea, pero también un
+          archivo de afectos, de historias sencillas y profundas que merecen ser
+          contadas y escuchadas por siempre.
+        </p>
+      </div>
+      <SecondaryButtom text="Conoce nuestros personajes" />
+    </div>
+
+    <div class="w-[427px] h-[640px]">
+        <Carousel />
+    </div>
+  </div>
+</section>

@@ -1,0 +1,55 @@
+---
+import { Mail, Linkedin, Github } from "@lucide/astro";
+---
+
+<footer class="bg-terciary-500 text-graytone-50 pt-[68px] pb-4">
+  <section class="max-w-[800px] mx-auto text-center space-y-8">
+    <p class="text-xl">
+      Ecos de la Pampa es una plataforma digital que nace desde el cariño y la
+      admiración por los personajes que han dado forma a la cultura viva de
+      Santa Cruz, Guanacaste. Es un museo en línea, pero también un archivo de
+      afectos, de historias sencillas y profundas que merecen ser contadas y
+      escuchadas por siempre.
+    </p>
+
+    <p class="text-2xl font-semibold">
+      Gracias por ser parte de nuestra historia ❤️
+    </p>
+
+    <p>
+      Creado por: <br />
+      <strong>Dyllan Andrey Ruíz Vásquez</strong>
+    </p>
+
+    <div class="flex justify-center gap-6">
+      <a
+        href="mailto:dyllanruizv2401@gmail.com?subject=Consulta&body=Hola%20Dyllan%2C%20quisiera%20contactarte..."
+        title="Enviar un correo electrónico"
+        aria-label="Enviar un correo electrónico"
+        class="transition-all duration-300 p-2 rounded-full bg-terciary-500 text-graytone-50 hover:bg-graytone-50 hover:text-terciary-500 hover:scale-110 cursor-pointer"
+      >
+        <Mail size={24} class="w-6 h-6" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/dyllan-ruiz-v%C3%A1squez"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Visitar mi perfil de LinkedIn"
+        aria-label="Visitar mi perfil de LinkedIn"
+        class="transition-all duration-300 p-2 rounded-full bg-terciary-500 text-graytone-50 hover:bg-graytone-50 hover:text-terciary-500 hover:scale-110 cursor-pointer"
+      >
+        <Linkedin size={24} class="w-6 h-6" />
+      </a>
+      <a
+        href="https://github.com/DyllanRuiz"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Visitar mi perfil de GitHub"
+        aria-label="Visitar mi perfil de GitHub"
+        class="transition-all duration-300 p-2 rounded-full bg-terciary-500 text-graytone-50 hover:bg-graytone-50 hover:text-terciary-500 hover:scale-110 cursor-pointer"
+      >
+        <Github size={24} class="w-6 h-6" />
+      </a>
+    </div>
+  </section>
+</footer>

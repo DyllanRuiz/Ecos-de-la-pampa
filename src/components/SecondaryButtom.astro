@@ -1,0 +1,21 @@
+---
+import { ArrowRight } from "@lucide/astro";
+
+interface Props {
+  text: string;
+  href?: string;
+}
+
+const { text, href } = Astro.props;
+---
+
+<a
+  href={href ?? "#"}
+  class="group inline-flex items-center justify-center gap-3 px-5 py-2 min-w-[161px] min-h-[50px]
+         rounded-full border-4 transition-colors duration-200
+         border-primary-300 text-secondary-300
+         hover:bg-secondary-50 hover:border-secondary-300 hover:text-secondary-300"
+>
+  <span class="font-medium text-xl">{text}</span>
+  <ArrowRight size={34} class="text-inherit" />
+</a>

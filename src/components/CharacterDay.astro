@@ -1,0 +1,68 @@
+---
+import characters from "../db/characters.json";
+import SecondaryButtom from "@/SecondaryButtom.astro";
+
+// Función para obtener el día del año (1-365)
+function getDayOfYear() {
+  const now = new Date();
+  const start = new Date(now.getFullYear(), 0, 0);
+  const diff =
+    now.getTime() -
+    start.getTime() +
+    (start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000;
+  const oneDay = 1000 * 60 * 60 * 24;
+  return Math.floor(diff / oneDay);
+}
+
+// Elegir personaje basado en el día del año
+const day = getDayOfYear();
+const personaje = characters[day % characters.length];
+
+// Limitar descripción a 344 caracteres
+const textoLimitado =
+  personaje.descripcion.length > 344
+    ? personaje.descripcion.slice(0, 344) + "..."
+    : personaje.descripcion;
+---
+
+<section
+  class="w-[1200px] h-[518px] mt-[120px] flex items-center justify-center mx-auto"
+>
+  <!-- Imagen del personaje -->
+  <div class="w-full">
+    <div
+      id="carrusel"
+      class="w-[540px] h-[520px] relative overflow-hidden rounded-[64px] border-4 border-primary-300"
+      aria-label="Carrusel de imágenes"
+      role="region"
+    >
+      <img
+        src={personaje.foto_url}
+        alt={`Retrato de ${personaje.nombre_completo}`}
+        class="w-full h-full object-cover rounded-[64px]"
+      />
+    </div>
+  </div>
+
+  <!-- Texto del personaje -->
+  <div
+    class="w-full pl-16 border-l-2 border-terciary-200 flex flex-col gap-[10px]"
+  >
+    <h1 class="font-bold text-[40px] text-secondary-300">Un día como ayer</h1>
+
+    <h2 class="pt-8 text-primary-600 font-normal text-2xl">
+      Hoy recordamos a
+      <span class="font-bold text-primary-400">
+        {" "}{personaje.aka || personaje.nombre_completo}
+      </span>
+    </h2>
+
+    <p class="mt-6 text-2xl font-normal text-primary-600">
+      {textoLimitado}
+    </p>
+
+    <div class="mt-8">
+      <SecondaryButtom text="Conoce más" />
+    </div>
+  </div>
+</section>

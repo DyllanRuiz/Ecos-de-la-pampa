@@ -1,0 +1,73 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "@/Hero.astro";
+import PrimaryButton from "@/PrimaryButton.astro";
+import CharacterDay from "@/CharacterDay.astro";
+---
+
+<Layout>
+  <!-- seccion hero -->
+  <Hero />
+  <!-- section form -->
+  <section class="w-full bg-secondary-400 py-16 mt-[120px]">
+    <div class="py-4 h-[191px] flex flex-col gap-6">
+      <h1 class="font-bold text-2xl text-center text-secondary-50">
+        ¿Quieres aportar alguna anécdota o crees que falta algún personaje por
+        destacar?
+      </h1>
+      <h2 class="text-xl font-medium text-center text-secondary-50">
+        Ayúdanos a darles el reconocimiento que merecen estos personajes <br /> que
+        hacen grande a nuestro cantón.
+      </h2>
+      <div class="flex justify-center">
+        <PrimaryButton text="Ir al formulario" />
+      </div>
+    </div>
+  </section>
+
+  <!-- seccion personajes del día -->
+  <CharacterDay />
+
+  <!-- section sobre nosotros -->
+  <section
+    class="w-full flex flex-col gap-[50px] items-center justify-center py-3 mt-[120px]"
+  >
+    <h1
+      class="text-[80px] font-extrabold italic text-primary-300"
+      style="filter: drop-shadow(4px 4px 3px rgba(132, 124, 254, 1));"
+    >
+      ¿Quiénes Somos?
+    </h1>
+    <div class="w-full flex items-center justify-center gap-7">
+      <div
+        class="w-[614px] h-[370px] p-3 rounded-3xl bg-graytone-200 bg-opacity-45 px-6"
+      >
+        <h1 class="text-center text-primary-600 font-medium text-[32px] mt-10">
+          ¿Qué es?
+        </h1>
+        <p class="text-center text-primary-600 text-xl font-normal mt-8">
+          Ecos de la Pampa es un espacio digital dedicado a preservar, honrar y
+          dar vida a las historias de los personajes que han marcado el alma
+          cultural del pueblo guanacasteco. Desde mascareros, sabaneros, músicos
+          y cocineras, hasta quienes, con su andar cotidiano, dejaron huella en
+          la memoria colectiva.
+        </p>
+      </div>
+      <div
+        class="w-[614px] h-[370px] p-3 rounded-3xl bg-graytone-200 bg-opacity-45 px-6"
+      >
+        <h1 class="text-center text-primary-600 font-medium text-[32px] mt-10">
+          ¿Qué buscamos?
+        </h1>
+        <p class="text-center text-primary-600 text-xl font-normal mt-8">
+          Queremos inmortalizar esas voces que aún resuenan en la sabana.
+          Rescatar los rostros, los relatos y la esencia de quienes construyeron
+          con manos, palabra y corazón la identidad de Santa Cruz y sus
+          alrededores. Este sitio es una invitación a recordar, a aprender y a
+          compartir. Aquí, la memoria no se guarda en silencio: se cuenta, se
+          canta y se celebra.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>
