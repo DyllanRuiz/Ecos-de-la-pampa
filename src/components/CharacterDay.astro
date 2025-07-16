@@ -37,7 +37,9 @@ const textoLimitado =
       role="region"
     >
       <img
-        src={personaje.foto_url}
+        src={personaje.foto_url
+          ? personaje.foto_url
+          : "https://placehold.co/510x520"}
         alt={`Retrato de ${personaje.nombre_completo}`}
         class="w-full h-full object-cover"
       />
