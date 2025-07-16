@@ -4,24 +4,24 @@ import Carousel from "@/Carousel.astro";
 ---
 
 <section
-  class="w-[1200px] h-[755px] flex items-center justify-center mx-auto pt-[100px]"
+  class="max-w-[1200px] justify-center mx-auto pt-[100px]"
 >
-  <div class="w-full h-full flex">
-    <div class="w-[773px] pr-16">
+  <div class="flex flex-col md:flex-row items-center justify-center h-full">
+    <div class="md:w-[773px] md:pr-16 order-2 md:order-1 w-full">
       <h1
-        class="text-[80px] font-extrabold italic text-primary-300"
+        class="md:text-[80px]  text-[64px] text-center md:text-left font-extrabold italic text-primary-300"
         style="filter: drop-shadow(4px 4px 3px rgba(132, 124, 254, 1));"
       >
         Ecos de la pampa
       </h1>
       <h2
-        class="text-[40px] font-medium italic text-primary-100"
+        class="md:text-[40px] md:text-left md:mt-0 text-center px-2 text-[32px] font-medium italic text-primary-100 mt-8"
         style="filter: drop-shadow(4px 4px 3px rgba(132, 124, 254, 1));"
       >
         Celebrando la identidad de nuestra tierra
       </h2>
       <div class="mb-6">
-        <p class="text-2xl font-normal text-primary-600">
+        <p class="md:text-2xl md:text-left md:mt-0 text-center px-2 text-xl  font-normal text-primary-600 mt-6 ">
           Ecos de la pampa es una plataforma digital que nace desde el cariño y
           la admiración por los personajes que han dado forma a la cultura viva
           de Santa Cruz, Guanacaste. Es un museo en línea, pero también un
@@ -29,10 +29,12 @@ import Carousel from "@/Carousel.astro";
           contadas y escuchadas por siempre.
         </p>
       </div>
+      <div class="flex justify-center md:justify-start md:mt-0 mt-6">
       <SecondaryButtom text="Conoce nuestros personajes" />
+      </div>
     </div>
 
-    <div class="w-[427px] h-[640px]">
+    <div class="md:w-[427px] md:h-[640px] order-1 md:order-2 w-full">
         <Carousel />
     </div>
   </div>

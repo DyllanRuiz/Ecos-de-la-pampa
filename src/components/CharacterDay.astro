@@ -26,42 +26,54 @@ const textoLimitado =
 ---
 
 <section
-  class="w-[1200px] h-[518px] mt-[120px] flex items-center justify-center mx-auto"
+  class="max-w-[1200px] mt-[120px] md:flex-row flex flex-col items-center justify-center mx-auto"
 >
   <!-- Imagen del personaje -->
   <div class="w-full">
     <div
       id="carrusel"
-      class="w-[540px] h-[520px] relative overflow-hidden rounded-[64px] border-4 border-primary-300"
+      class="md:w-[510px] md:h-[520px] md:mt-0 mt-6 w-[300px] h-[380px] mx-auto md:mx-0 relative overflow-hidden rounded-[64px] border-4 border-primary-300 bg-primary-300"
       aria-label="Carrusel de imágenes"
       role="region"
     >
       <img
         src={personaje.foto_url}
         alt={`Retrato de ${personaje.nombre_completo}`}
-        class="w-full h-full object-cover rounded-[64px]"
+        class="w-full h-full object-cover"
       />
     </div>
   </div>
 
   <!-- Texto del personaje -->
   <div
-    class="w-full pl-16 border-l-2 border-terciary-200 flex flex-col gap-[10px]"
+    class="w-full md:pl-16 md:border-l-2 border-terciary-200 flex flex-col gap-[10px]"
   >
-    <h1 class="font-bold text-[40px] text-secondary-300">Un día como ayer</h1>
+    <div
+      class="w-fit mx-auto md:w-full md:mx-0 border-t-2 border-terciary-200 md:border-t-0 md:mt-0 mt-9"
+    >
+      <h1
+        class="font-bold text-[40px] text-secondary-300 md:text-left text-center"
+      >
+        Un día como ayer
+      </h1>
+    </div>
 
-    <h2 class="pt-8 text-primary-600 font-normal text-2xl">
+    <h2
+      class="pt-8 text-primary-600 font-normal text-2xl md:text-left text-center"
+    >
       Hoy recordamos a
       <span class="font-bold text-primary-400">
         {" "}{personaje.aka || personaje.nombre_completo}
       </span>
     </h2>
 
-    <p class="mt-6 text-2xl font-normal text-primary-600">
+    <p
+      class="mt-6 text-2xl font-normal text-primary-600 md:text-left text-center px-2"
+    >
       {textoLimitado}
     </p>
 
-    <div class="mt-8">
+    <div class="mt-8 flex justify-start md:pl-0 pl-4">
       <SecondaryButtom text="Conoce más" />
     </div>
   </div>
