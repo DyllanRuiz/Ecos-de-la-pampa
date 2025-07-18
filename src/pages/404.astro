@@ -1,0 +1,31 @@
+---
+import SecondaryButtom from "@/SecondaryButtom.astro";
+import Layout from "src/layouts/Layout.astro";
+---
+
+<Layout>
+  <section class="gap-14 pt-10">
+    <div class="py-6 mt-14">
+      <h1
+        class="text-[40px] font-semibold text-primary-600 text-center md:text-[60px]"
+      >
+        Upps, parece que la monta no salió como se esperaba...
+      </h1>
+      <p
+        class="text-center text-sm mt-2 text-primary-600 md:text-base font-normal"
+      >
+        La página que buscas no se encuentra disponible. Por favor, verifica la
+        URL o regresa a la página principal.
+      </p>
+      <img
+        src="/404.gif"
+        alt="Página no encontrada"
+        class="w-[350px] mx-auto mt-6 rounded-2xl md:w-[900px]"
+        loading="lazy"
+      />
+      <div class="flex justify-center mt-8">
+        <SecondaryButtom text="Regresar a la página principal" href="/" />
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,61 +1,61 @@
----
-import Footer from "@/Footer.astro"
+  ---
+  import Footer from "@/Footer.astro"
 
 
----
+  ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Ecos de la Pampa</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Itim&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="flex flex-col min-h-screen gap-[120px]">
-    <main class="flex-grow gap-[120px]">
-      <slot />
-    </main>
+  <!doctype html>
+  <html lang="es">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <meta name="generator" content={Astro.generator} />
+      <title>Ecos de la Pampa</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Itim&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+    <body class="flex flex-col min-h-screen gap-[120px]">
+      <main class="flex-grow gap-[120px]">
+        <slot />
+      </main>
 
 
-    <footer>
-      <Footer />
-    </footer>
+      <footer>
+        <Footer />
+      </footer>
 
-  </body>
-</html>
+    </body>
+  </html>
 
-<style>
-	*{
-		font-family: jost, sans-serif;
-	}
+  <style>
+    *{
+      font-family: jost, sans-serif;
+    }
 
-  body {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #e7ebe7;
-    position: relative;
-  }
+    body {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #e7ebe7;
+      position: relative;
+    }
 
-  body::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    background-image: url('/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.16; 
-    pointer-events: none;
-  }
-    
-</style>
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-image: url('/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.16; 
+      pointer-events: none;
+    }
+      
+  </style>
