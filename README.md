@@ -47,7 +47,7 @@ Este proyecto nace del amor por la tierra, la palabra y la gente. No busca docum
 
 1. Ingresa al sitio
 2. Da click al boton "Ir al formulario"
-![Ir al Formulario](assets/IrAlFormulario.png)
+![Ir al Formulario](src/assets/IrAlFormulario.png)
 3. Adjunta tu texto, fotografía o anécdota
 
 También puedes contribuir al desarrollo del sitio a través de pull requests o sugerencias.
@@ -57,7 +57,7 @@ También puedes contribuir al desarrollo del sitio a través de pull requests o 
 ## 💬 Agradecimiento
 
 Gracias a todas las personas que cuidan la memoria oral de sus comunidades.  
-Gracias por compartir, por recordar, por sembrar.
+Gracias por compartir y por recordar.
 
 ---
 
@@ -68,4 +68,4 @@ Si vas a reutilizar o compartir contenido, por favor, cita la fuente y honra el 
 
 ---
 
-> *“Santa Cruz no olvida, porque su gente es memoria viva."*
+> *“Santa Cruz no olvida"*

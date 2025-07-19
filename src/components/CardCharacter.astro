@@ -1,0 +1,38 @@
+---
+const { personaje } = Astro.props;
+---
+
+<article
+  title={personaje.aka
+    ? `Nombre: ${personaje.nombre_completo}\nAlias: ${personaje.aka}`
+    : `Nombre: ${personaje.nombre_completo}`}
+>
+  <a
+    href={`/personaje/${personaje.id}/${personaje.aka || personaje.nombre_completo}`}
+  >
+    <img
+      src={personaje.foto_url}
+      alt={`Foto de ${personaje.nombre_completo}`}
+      class="w-[150px] h-[200px] object-cover rounded-2xl custom-hover-shadow md:w-[200px] md:h-[250px]"
+    />
+  </a>
+  <h1
+    class="font-medium text-base max-w-[150px] text-primary-600 mt-1 truncate md:text-lg md:max-w-[200px]"
+  >
+    {personaje.nombre_completo}
+  </h1>
+  <p
+    class="text-xs font-normal max-w-[150px] text-primary-600 truncate md:text-sm md:max-w-[200px]"
+  >
+    {personaje.aka}
+  </p>
+</article>
+
+<style>
+  .custom-hover-shadow {
+    transition: filter 0.3s ease;
+  }
+  .custom-hover-shadow:hover {
+    filter: drop-shadow(-5px 4px 0px rgba(1, 138, 24, 1));
+  }
+</style>

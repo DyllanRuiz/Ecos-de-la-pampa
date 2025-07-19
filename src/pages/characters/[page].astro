@@ -1,0 +1,52 @@
+---
+import Layout from "src/layouts/Layout.astro";
+import CardCharacter from "@/CardCharacter.astro";
+import characters from "../../db/characters.json";
+
+export async function getStaticPaths() {
+  const charactersPerPage = 6;
+  const totalPages = Math.ceil(characters.length / charactersPerPage);
+
+  return Array.from({ length: totalPages }, (_, i) => ({
+    params: { page: String(i + 1) },
+  }));
+}
+
+const charactersPerPage = 6;
+
+const { page } = Astro.params;
+const currentPage = parseInt(page ?? "1");
+
+const startIndex = (currentPage - 1) * charactersPerPage;
+const endIndex = startIndex + charactersPerPage;
+const currentCharacters = characters.slice(startIndex, endIndex);
+---
+
+<Layout>
+  <div class="w-11/12 mx-auto border-b-2 border-[#8A1801]">
+    <h1 class="text-[40px] font-medium text-center text-primary-600 py-5 md:text-[64px]">
+      ¡Conoce a nuestros <span class="text-primary-300 font-semibold">personajes!</span>
+    </h1>
+  </div>
+
+  <div class="grid grid-cols-2 gap-6 p-8 place-items-center md:grid-cols-3">
+    {currentCharacters.map((personaje) => <CardCharacter personaje={personaje} />)}
+  </div>
+
+  <div class="flex justify-center py-4">
+    {
+      Array.from({ length: Math.ceil(characters.length / charactersPerPage) }, (_, i) => (
+        <a
+          href={`/characters/${i + 1}`}
+          class={`mx-1 px-2 py-1 border border-primary-300 rounded-lg ${
+            currentPage === i + 1
+              ? "bg-primary-300 text-terciary-600"
+              : "text-primary-600"
+          }`}
+        >
+          {i + 1}
+        </a>
+      ))
+    }
+  </div>
+</Layout>
