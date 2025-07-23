@@ -8,10 +8,10 @@ const { personaje } = Astro.props;
     : `Nombre: ${personaje.nombre_completo}`}
 >
   <a
-    href={`/personaje/${personaje.id}/${personaje.aka || personaje.nombre_completo}`}
+    href={`/characters/${personaje.id}/${personaje.aka || personaje.nombre_completo}`}
   >
     <img
-      src={personaje.foto_url}
+      src={personaje.foto_url[0]}
       alt={`Foto de ${personaje.nombre_completo}`}
       class="w-[150px] h-[200px] object-cover rounded-2xl custom-hover-shadow md:w-[200px] md:h-[250px]"
     />

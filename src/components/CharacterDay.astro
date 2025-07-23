@@ -2,7 +2,6 @@
 import characters from "../db/characters.json";
 import SecondaryButtom from "@/SecondaryButtom.astro";
 
-// Función para obtener el día del año (1-365)
 function getDayOfYear() {
   const now = new Date();
   const start = new Date(now.getFullYear(), 0, 0);
@@ -14,7 +13,6 @@ function getDayOfYear() {
   return Math.floor(diff / oneDay);
 }
 
-// Elegir personaje basado en el día del año
 const day = getDayOfYear();
 const personaje = characters[day % characters.length];
 
@@ -28,7 +26,6 @@ const textoLimitado =
 <section
   class="max-w-[1200px] md:flex-row flex flex-col items-center justify-center mx-auto"
 >
-  <!-- Imagen del personaje -->
   <div class="w-full">
     <div
       id="carrusel"
@@ -37,16 +34,17 @@ const textoLimitado =
       role="region"
     >
       <img
-        src={personaje.foto_url
+        src={typeof personaje.foto_url === "string"
           ? personaje.foto_url
-          : "https://placehold.co/510x520"}
+          : Array.isArray(personaje.foto_url) && personaje.foto_url.length > 0
+            ? personaje.foto_url[0]
+            : "https://placehold.co/510x520"}
         alt={`Retrato de ${personaje.nombre_completo}`}
         class="w-full h-full object-cover"
       />
     </div>
   </div>
 
-  <!-- Texto del personaje -->
   <div
     class="w-full md:pl-16 md:border-l-2 border-terciary-200 flex flex-col gap-[10px]"
   >

@@ -1,0 +1,172 @@
+---
+const { personajes } = Astro.props;
+const fotos = personajes.foto_url || [];
+
+const placeholder = "/placeholder-image.png";
+const initialImage = fotos.length > 0 ? fotos[0] : placeholder;
+---
+
+<section class="w-full max-w-3xl mx-auto">
+  <h2
+    class="text-center text-2xl font-semibold italic text-primary-600 mb-4"
+    style="filter: drop-shadow(0px 2px 4px rgba(1, 138, 24, 1));"
+  >
+    Galería
+  </h2>
+
+  <!-- Imagen principal -->
+  <div
+    class="flex items-center justify-center h-96 rounded-2xl overflow-hidden"
+  >
+    <img
+      id="main-image"
+      src={initialImage}
+      alt="Foto principal"
+      class="object-cover h-[400px] w-[340px] transition duration-500 ease-in-out rounded-2xl"
+    />
+  </div>
+
+  <!-- Carrusel miniaturas -->
+  <div class="relative mt-4 w-full max-w-xs mx-auto flex items-center">
+    {
+      fotos.length > 3 && (
+        <button
+          id="left-arrow"
+          aria-label="Mover izquierda"
+          class="p-2 text-primary-300 hover:text-primary-800 disabled:text-gray-300"
+        >
+          &lt;
+        </button>
+      )
+    }
+
+    <div
+      id="thumbnails-container"
+      class="flex gap-2 overflow-x-auto px-2 touch-auto snap-x snap-mandatory scrollbar-hide"
+      style="scroll-behavior: smooth;"
+    >
+      {
+        (fotos.length > 0 ? fotos : [placeholder]).map(
+          (foto: string, i: number) => (
+            <img
+              src={foto}
+              alt={`Miniatura ${i + 1}`}
+              draggable="false"
+              loading="lazy"
+              onload="this.classList.remove('skeleton')"
+              class:list={["skeleton"]}
+              data-index={i}
+              class="w-16 h-16 object-cover rounded cursor-pointer border-2 border-transparent transition"
+              aria-selected={i === 0 ? "true" : "false"}
+            />
+          )
+        )
+      }
+    </div>
+
+    {
+      fotos.length > 3 && (
+        <button
+          id="right-arrow"
+          aria-label="Mover derecha"
+          class="p-2 text-primary-300 hover:text-primary-800 disabled:text-gray-300"
+        >
+          &gt;
+        </button>
+      )
+    }
+  </div>
+</section>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const mainImage = document.getElementById("main-image");
+    const thumbnailsContainer = document.getElementById("thumbnails-container");
+    const thumbnails = Array.from(
+      thumbnailsContainer.querySelectorAll("img[data-index]")
+    );
+
+    let selectedIndex = 0;
+
+    // Función para actualizar la miniatura seleccionada
+    function updateSelected(newIndex) {
+      if (newIndex < 0 || newIndex >= thumbnails.length) return;
+
+      mainImage.src = thumbnails[newIndex].src;
+
+      thumbnails.forEach((thumb, i) => {
+        if (i === newIndex) {
+          thumb.classList.add("border-primary-300");
+          thumb.classList.remove("border-transparent");
+          thumb.setAttribute("aria-selected", "true");
+          selectedIndex = newIndex;
+
+          // Scroll manual sin afectar scroll vertical
+          const containerRect = thumbnailsContainer.getBoundingClientRect();
+          const thumbRect = thumb.getBoundingClientRect();
+          const scrollLeft = thumbnailsContainer.scrollLeft;
+          const offset = thumbRect.left - containerRect.left;
+
+          thumbnailsContainer.scrollTo({
+            left:
+              scrollLeft +
+              offset -
+              thumbnailsContainer.clientWidth / 2 +
+              thumb.offsetWidth / 2,
+            behavior: "smooth",
+          });
+        } else {
+          thumb.classList.remove("border-primary-300");
+          thumb.classList.add("border-transparent");
+          thumb.setAttribute("aria-selected", "false");
+        }
+      });
+    }
+
+    // Inicializa la selección con la primera imagen
+    updateSelected(0);
+
+    // Evento click en miniaturas
+    thumbnails.forEach((thumb, i) => {
+      thumb.addEventListener("click", () => {
+        updateSelected(i);
+      });
+    });
+
+    // Manejo de flechas solo si hay más de 3 imágenes
+    const leftArrow = document.getElementById("left-arrow");
+    const rightArrow = document.getElementById("right-arrow");
+
+    if (leftArrow && rightArrow) {
+      // Ajustar scroll del contenedor
+      const scrollAmount = 60;
+
+      leftArrow.addEventListener("click", () => {
+        thumbnailsContainer.scrollBy({
+          left: -scrollAmount,
+          behavior: "smooth",
+        });
+      });
+
+      rightArrow.addEventListener("click", () => {
+        thumbnailsContainer.scrollBy({
+          left: scrollAmount,
+          behavior: "smooth",
+        });
+      });
+    }
+  });
+</script>
+
+<style>
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE y Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .skeleton {
+    @apply bg-gray-300 animate-pulse rounded-lg;
+  }
+</style>

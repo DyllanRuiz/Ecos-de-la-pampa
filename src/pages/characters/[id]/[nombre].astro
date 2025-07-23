@@ -1,0 +1,36 @@
+---
+import Layout from "src/layouts/Layout.astro";
+import personajes from "../../../db/characters.json";
+import Gallery from "@/Gallery.astro";
+
+export async function getStaticPaths() {
+  return personajes.map((personaje) => {
+    return {
+      params: {
+        id: personaje.id.toString(),
+        nombre: personaje.aka || personaje.nombre_completo,
+      },
+      props: {
+        personaje,
+      },
+    };
+  });
+}
+
+const { personaje } = Astro.props;
+---
+
+<Layout>
+  <div class="w-11/12 mx-auto border-b-2 border-[#8A1801]">
+    <h1
+      class="text-[40px] font-medium text-center text-primary-600 py-5 md:text-[64px]"
+    >
+      ¡Conoce a nuestros <span class="text-primary-300 font-semibold"
+        >personajes!</span
+      >
+    </h1>
+  </div>
+  <section class="gap-14 py-6">
+    <Gallery personajes={personaje} />
+  </section>
+</Layout>
