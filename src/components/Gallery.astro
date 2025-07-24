@@ -6,28 +6,29 @@ const placeholder = "/placeholder-image.png";
 const initialImage = fotos.length > 0 ? fotos[0] : placeholder;
 ---
 
-<section class="w-full max-w-3xl mx-auto">
+<section class="md:h-[652px] mx-auto">
   <h2
     class="text-center text-2xl font-semibold italic text-primary-600 mb-4"
     style="filter: drop-shadow(0px 2px 4px rgba(1, 138, 24, 1));"
+    aria-label="Título de la galería"
   >
     Galería
   </h2>
 
   <!-- Imagen principal -->
   <div
-    class="flex items-center justify-center h-96 rounded-2xl overflow-hidden"
+    class="flex items-center justify-center h-96 rounded-2xl overflow-hidden md:w-[500px] md:h-[570px]"
   >
     <img
       id="main-image"
       src={initialImage}
       alt="Foto principal"
-      class="object-cover h-[400px] w-[340px] transition duration-500 ease-in-out rounded-2xl"
+      class="object-cover h-[400px] w-[340px] transition duration-500 ease-in-out rounded-2xl md:w-[500px] md:h-[570px]"
     />
   </div>
 
   <!-- Carrusel miniaturas -->
-  <div class="relative mt-4 w-full max-w-xs mx-auto flex items-center">
+  <div class="relative mt-4 w-full max-w-xs mx-auto flex justify-center items-center  md:w-[500px] ">
     {
       fotos.length > 3 && (
         <button

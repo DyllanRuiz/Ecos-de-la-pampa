@@ -2,6 +2,7 @@
 import Layout from "src/layouts/Layout.astro";
 import personajes from "../../../db/characters.json";
 import Gallery from "@/Gallery.astro";
+import Book from "@/Book.astro";
 
 export async function getStaticPaths() {
   return personajes.map((personaje) => {
@@ -21,7 +22,7 @@ const { personaje } = Astro.props;
 ---
 
 <Layout>
-  <div class="w-11/12 mx-auto border-b-2 border-[#8A1801]">
+  <div class="w-11/12 mx-auto border-b-2 border-[#8A1801] md:mt-3">
     <h1
       class="text-[40px] font-medium text-center text-primary-600 py-5 md:text-[64px]"
     >
@@ -30,7 +31,8 @@ const { personaje } = Astro.props;
       >
     </h1>
   </div>
-  <section class="gap-14 py-6">
+  <section class=" flex flex-col gap-14 py-6 md:flex-row-reverse md:w-[1200px] md:mx-auto md:py-0 ">
     <Gallery personajes={personaje} />
+    <Book personaje={personaje} />
   </section>
 </Layout>

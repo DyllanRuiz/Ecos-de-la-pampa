@@ -7,7 +7,8 @@
     "fecha_muerte": null,
     "lugar": "Santa Cruz (Barrio Santa Cecilia)",
     "foto_url": ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
-    "descripcion": "Desde hace más de 40 años, Álvaro Duarte Marín, junto con su esposa Melania Vásquez, han sido los encargados de dar vida a las mascaradas que animan las Fiestas Típicas Nacionales de Santa Cruz. Su taller, ubicado en el Barrio Santa Cecilia, es un espacio lleno de creatividad y tradición donde se crean máscaras y figuras gigantes que desfilan por las calles durante estas festividades. Cada pieza refleja no solo arte popular, sino también una forma de mantener vivas las tradiciones guanacastecas: las costumbres, el colorido, la historia y la identidad de su gente. La labor de Álvaro y Melania se ha convertido en la columna vertebral de un legado cultural que trasciende generaciones y conecta el presente con el pasado mediante la belleza, la pasión y el orgullo local."
+    "descripcion": "Álvaro Duarte Marín y su esposa Melania Vásquez han dado vida a las mascaradas de Santa Cruz por más de 40 años, creando máscaras y figuras gigantes que mantienen vivas las tradiciones guanacastecas y conectan generaciones con el arte popular local.",
+    "anecdotas": []
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "fecha_muerte": "16 de noviembre de 1999",
     "lugar": "Santa Cruz",
     "foto_url":  ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
-    "descripcion": "Jesús Bonilla Chavarría fue un compositor y director musical cuya trayectoria musical comenzó a los 10 años y que se consolidó como una figura central de la identidad cultural de Guanacaste. Fue director de bandas en Liberia y Alajuela, además de liderar y ser primer flautista en la Orquesta Sinfónica Nacional. Su producción supera las 300 obras, incluyendo himnos escolares y piezas emblemáticas como “Luna Liberiana” (1936), “Pampa” y el Himno de la Anexión de Guanacaste, que se interpretan en actos cívicos y festividades a nivel nacional. Su talento musical le valió múltiples reconocimientos, entre ellos el prestigioso Premio Nacional de Cultura Popular en 1999. Su legado trasciende las partituras: su música es una expresión profunda del sentir guanacasteco y costarricense."
+    "descripcion": "Jesús Bonilla Chavarría fue compositor y director musical, autor de más de 300 obras como “Luna Liberiana” y el Himno de la Anexión de Guanacaste. Su música y legado son expresión profunda de la identidad guanacasteca y costarricense.",
+    "anecdotas": []
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "fecha_muerte": "6 de octubre de 2015",
     "lugar": "Cantón de Santa Cruz",
     "foto_url":  ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
-    "descripcion": "Ulpiano Arrieta Arrieta, mejor conocido como Ulpiano Duarte, fue un marimbista excepcional y fundador de la Marimba Diriá en 1969, declarada Marimba Nacional en 1974. A lo largo de su vida compuso más de 60 piezas para marimba, entre las que destacan “Nostalgia en la Pampa” y “Santa Cruz de Fiesta”. En 1975 fundó el Taller de Marimba de la Universidad de Costa Rica, iniciativa que permitió la formación de generaciones de músicos que hoy mantienen viva la tradición. Reconocido con el Premio Nacional de Cultura Popular Tradicional en 1998, Duarte dedicó su vida a preservar y enriquecer el folclor guanacasteco, proyectando su música no solo en festivales locales, sino también en escenarios nacionales y demostrando que la marimba es un pilar esencial del patrimonio costarricense."
+    "descripcion": "Ulpiano Duarte, marimbista y fundador de la Marimba Diriá, compuso más de 60 piezas y fundó el Taller de Marimba de la UCR. Dedicó su vida a preservar el folclor guanacasteco y proyectar la marimba como pilar del patrimonio costarricense.",
+    "anecdotas": []
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "fecha_muerte": "1989",
     "lugar": "Lagunilla, Santa Cruz",
     "foto_url":  ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
-    "descripcion": "María Leal Rodríguez, conocida también como María Leal de Noguera, fue una educadora, escritora y pionera en la promoción de la cultura en Santa Cruz. En 1925 fundó el primer jardín de infantes en el cantón, impulsando además programas de alfabetización de adultos en una región donde la educación formal era escasa. Como recopiladora de memoria oral, publicó varios volúmenes de cuentos tradicionales guanacastecos, como “Cuentos Viejos” (1923), “De la vida en la costa” (1959) y “Estampas del camino” (1974). Su estilo ha sido comparado con el de Carmen Lyra por su capacidad de capturar la esencia de la vida campesina costarricense. En 1955 fue nombrada Mujer del Año y, en honor a su legado, una escuela local lleva su nombre. María Leal consagró su vida a preservar la identidad cultural de su región y a difundirla a través de la palabra."
+    "descripcion": "María Leal Rodríguez fue educadora y escritora, fundadora del primer jardín de infantes de Santa Cruz y autora de cuentos tradicionales guanacastecos. Dedicó su vida a preservar la identidad cultural y difundirla a través de la palabra.",
+    "anecdotas": []
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "fecha_muerte": "5 de agosto de 2001",
     "lugar": "Santa Cruz",
     "foto_url":  ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
-    "descripcion": "José Ramírez Saizar, conocido como el “Poeta de la Pampa”, fue un autor profundamente vinculado a las raíces y costumbres de Guanacaste. Escribió con un lenguaje sencillo pero lleno de emoción sobre la vida rural, las fiestas tradicionales y el paisaje sabanero. Algunas de sus obras más destacadas incluyen poemas musicalizados como “Nayuribes” y su propia versión del “Himno de la Anexión de Guanacaste”, sobre la música original de Jesús Bonilla. Su obra ha sido estudiada en escuelas y universidades como una muestra del sentir campesino y cultural de la región. Ramírez Saizar también desempeñó un papel clave como recopilador de tradición oral, registrando historias y leyendas que, de otra forma, hubieran desaparecido."
+    "descripcion": "José Ramírez Saizar, el “Poeta de la Pampa”, escribió sobre la vida rural y las fiestas de Guanacaste. Sus poemas y recopilaciones de tradición oral reflejan el sentir campesino y cultural de la región y han sido estudiados en escuelas y universidades.",
+    "anecdotas": []
   },
   {
     "id": 6,
@@ -57,7 +62,8 @@
     "fecha_muerte": "alrededor de 1945",
     "lugar": "Santa Cruz",
     "foto_url":  ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
-    "descripcion": "Clímaco Arrieta Pérez fue un educador, escritor y político profundamente arraigado en Santa Cruz. A finales del siglo XIX y principios del XX, se dedicó a promover la educación pública, las artes y los valores cívicos en su comunidad. Formó parte de la Unión Guanacasteca, organización dedicada a defender la identidad regional y fortalecer el sentido de pertenencia. Sus escritos, ensayos y discursos reflejan un compromiso con la preservación de la cultura local y la formación de ciudadanos comprometidos con su tierra. Aunque los registros históricos sobre su vida son escasos, su influencia en la institucionalidad y en la educación del cantón aún persiste, y muchos docentes e historiadores locales reconocen su legado."
+    "descripcion": "Clímaco Arrieta Pérez fue educador, escritor y político que promovió la educación, las artes y los valores cívicos en Santa Cruz. Su legado persiste en la institucionalidad y la cultura local, reconocido por docentes e historiadores.",
+    "anecdotas": []
   },
   {
     "id": 7,
@@ -74,9 +80,18 @@
       "https://vozdeguanacaste.com/wp-content/uploads/2022/08/2022-AGOSTO-Musica-Carlos-Rodriguez-Santana-Caliche-Hernan-Gutierrez-1.jpg",
       "https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD",
       "https://vozdeguanacaste.com/wp-content/uploads/2022/08/2022-AGOSTO-Musica-Carlos-Rodriguez-Santana-Caliche-Hernan-Gutierrez-1.jpg"
-      
     ],
-    "descripcion": "Edgar Leal Arrieta es un destacado cronista y autor santacruceño cuya obra ha sido fundamental para registrar y difundir las tradiciones culturales de la región. Su libro más reconocido, “De Fiesta en Fiesta en Guanacaste”, recopila relatos, anécdotas, costumbres festivas, canciones populares, dichos y personajes que han dado forma a la identidad de Santa Cruz. A través de su escritura, Arrieta ha logrado captar el pulso de la vida cotidiana y festiva con sensibilidad y detalle, convirtiéndose en referencia para educadores, investigadores y amantes del folclor. Su dedicación a documentar lo intangible ha permitido que muchas tradiciones locales permanezcan vivas y reconocidas."
+    "descripcion": "Edgar Leal Arrieta es cronista y autor santacruceño. Su libro “De Fiesta en Fiesta en Guanacaste” recopila relatos, costumbres y personajes que han dado forma a la identidad de Santa Cruz, preservando tradiciones locales con sensibilidad y detalle.",
+    "anecdotas": [
+      {
+        "titulo": "El origen de la frase 'Pura Vida'",
+        "historia": "Edgar Leal Arrieta relata que la frase 'Pura Vida' se popularizó en Santa Cruz durante las fiestas patronales de la década de 1950, cuando un grupo de jóvenes comenzó a usarla como saludo y expresión de alegría. Con el tiempo, se convirtió en un símbolo de la identidad costarricense."
+      },
+      {
+        "titulo": "La historia del 'Chorreador'",
+        "historia": "En su libro, Arrieta narra cómo el 'Chorreador', un plato típico de Santa Cruz, se originó en las fiestas patronales como una forma de aprovechar los sobrantes de la comida. Con el tiempo, se convirtió en un platillo emblemático que representa la hospitalidad y la tradición culinaria de la región."
+      }
+    ]
   },
   {
     "id": 8,
@@ -86,7 +101,8 @@
     "fecha_muerte": "2017",
     "lugar": "Santa Cruz",
     "foto_url":  ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
-    "descripcion": "José Jackson Guadamuz fue un escultor y gestor cultural que dedicó gran parte de su vida a embellecer el espacio público de Santa Cruz. Fue el coordinador principal del festival de murales de la ciudad, iniciativa participativa que convocó a artistas locales y nacionales para pintar más de 60 obras en plazas, fachadas y muros de la comunidad. Sus creaciones, tanto escultóricas como pictóricas, representan escenas de la vida cotidiana, símbolos identitarios guanacastecos y homenajes a personajes históricos. Gracias a su gestión, el arte urbano se convirtió en un vehículo para reafirmar el sentido de pertenencia y orgullo local, además de revitalizar áreas urbanas."
+    "descripcion": "José Jackson Guadamuz fue escultor y gestor cultural, coordinador del festival de murales de Santa Cruz. Sus obras y gestión artística embellecieron la ciudad y fortalecieron el sentido de pertenencia y orgullo local a través del arte urbano.",
+    "anecdotas": []
   },
   {
     "id": 9,
@@ -96,7 +112,8 @@
     "fecha_muerte": null,
     "lugar": "Santa Cruz",
     "foto_url":  ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
-    "descripcion": "Carlos Demetrio Morales Torres es un historiador y relator oral reconocido por su trabajo para rescatar la memoria de Santa Cruz, a través de historias familiares, anécdotas, fotografías antiguas y documentos municipales. Ha compilado genealogías, relatos de emigrantes, anécdotas de campesinos y crónicas de fiestas tradicionales. Su trabajo permite que múltiples generaciones recuerden de dónde vienen, cómo vivían sus antepasados y qué valores transmitieron. Morales Torres ha colaborado con escuelas, museos locales y medios de comunicación para difundir este patrimonio intangible, promoviendo el reconocimiento de la riqueza histórica y emocional de su comunidad."
+    "descripcion": "Carlos Demetrio Morales Torres es historiador y relator oral, dedicado a rescatar la memoria de Santa Cruz mediante historias familiares, fotografías y documentos. Su trabajo promueve el reconocimiento de la riqueza histórica y emocional local.",
+    "anecdotas": []
   },
   {
     "id": 10,
@@ -106,6 +123,7 @@
     "fecha_muerte": null,
     "lugar": "Santa Cruz",
     "foto_url":  ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
-    "descripcion": "Graciela Montalván Salgado es una de las guardianas de la gastronomía tradicional de Santa Cruz. Conocida por su habilidad culinaria y su memoria para recetas antiguas, ha dedicado décadas a preparar y enseñar platos típicos como el vigorón, el chorreador, tamales, tortillas de maíz caseras, frijoles tradicionales y dulces típicos. Ha impartido talleres comunitarios donde transmite conocimientos sobre técnicas de preparación, ingredientes originales, usos ceremoniales y el valor cultural de la mesa guanacasteca. Además, ha compartido anécdotas familiares, recetas de varios miembros de su familia y consejos culinarios que reflejan el vínculo entre comida, historia y comunidad. Su labor ha contribuido de manera decisiva a mantener vivas las tradiciones funcionales y simbólicas de la cultura local."
+    "descripcion": "Graciela Montalván Salgado es guardiana de la gastronomía tradicional de Santa Cruz. Ha dedicado décadas a preparar y enseñar platos típicos, transmitiendo recetas y técnicas que mantienen vivas las tradiciones culinarias de la cultura local.",
+    "anecdotas": []
   }
 ]

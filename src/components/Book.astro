@@ -1,0 +1,154 @@
+---
+const { personaje } = Astro.props;
+import { CircleArrowLeft } from "@lucide/astro";
+---
+
+
+<section
+  class="w-11/12 h-[652px] flex flex-col gap-3 mx-auto bg-graytone-100 rounded-2xl py-[30px] px-6 md:w-[575px]"
+>
+  <div class="justify-start absolute">
+    <button
+      id="btn-volver"
+      class="mb-4 text-sm text-primary underline hover:text-secondary hidden"
+      aria-label="Botón para volver"
+    >
+      <CircleArrowLeft size={26} class="inline mr-1" color="#018A18"/>
+    </button>
+  </div>
+  <div class="flex justify-center gap-2 mb-2">
+    <button id="tab-info" class="tab-button active" aria-label="Botón de información">Información</button>
+    <button id="tab-anecdotas" class="tab-button" aria-label="Botón de anécdotas">Anécdotas</button>
+  </div>
+
+  <hr class="border-t border-[#8A1801] mb-4" />
+
+  <!-- Panel de información -->
+  <div id="info-panel" class="tab-panel flex flex-col gap-[20px]">
+    <p class="font-normal text-xl text-center">
+      <strong>Nombre:</strong>
+      {personaje.nombre_completo}
+    </p>
+    {
+      personaje.aka && (
+        <p class="font-normal text-xl text-center">
+          <strong>Conocido como:</strong> {personaje.aka}
+        </p>
+      )
+    }
+    <p class="font-normal text-xl text-center">
+      <strong>Fecha de nacimiento:</strong>
+      {personaje.fecha_nacimiento}
+    </p>
+    <p class="font-normal text-xl text-center">
+      <strong>Vecino de:</strong>
+      {personaje.lugar}
+    </p>
+    <p class="font-normal text-xl text-center">
+      <strong>Breve descripción:</strong>
+      {personaje.descripcion}
+    </p>
+  </div>
+
+  <!-- Panel de anécdotas -->
+  <div id="anecdotas-panel" class="tab-panel hidden">
+    <ul
+      id="anecdotas-list"
+      data-anecdotas={JSON.stringify(personaje.anecdotas)}
+    >
+      {
+        personaje.anecdotas
+          .slice(0, 5)
+          .map((a: { titulo: string; autor: string }, i: number) => (
+            <li
+              class="anecdota-item cursor-pointer border border-primary-600 rounded-xl p-3 mb-8 hover:bg-secondary-50/15 hover:border-secondary-400 hover:text-secondary-400"
+              data-index={i}
+            >
+              <strong>
+                {i + 1}. {a.titulo}
+              </strong>
+            </li>
+          ))
+      }
+    </ul>
+
+    <div id="anecdota-detalle" class="hidden mt-4">
+      <h3
+        class="font-bold text-2xl text-center text-primary-600"
+        id="detalle-titulo"
+        aria-label="Título de la anécdota"
+      >
+      </h3>
+      <p id="detalle-texto" class="text-base font-light text-primary-600 mt-4">
+      </p>
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabInfo = document.getElementById("tab-info");
+    const tabAnecdotas = document.getElementById("tab-anecdotas");
+    const panelInfo = document.getElementById("info-panel");
+    const panelAnecdotas = document.getElementById("anecdotas-panel");
+
+    tabInfo.addEventListener("click", () => {
+      panelInfo.classList.remove("hidden");
+      panelAnecdotas.classList.add("hidden");
+      tabInfo.classList.add("active");
+      tabAnecdotas.classList.remove("active");
+    });
+
+    tabAnecdotas.addEventListener("click", () => {
+      panelInfo.classList.add("hidden");
+      panelAnecdotas.classList.remove("hidden");
+      tabInfo.classList.remove("active");
+      tabAnecdotas.classList.add("active");
+    });
+
+    // Muestra detalle de anécdota
+    const anecdotas = JSON.parse(
+      document
+        .getElementById("anecdotas-list")
+        .getAttribute("data-anecdotas") || "[]"
+    );
+    document.querySelectorAll(".anecdota-item").forEach((item) => {
+      item.addEventListener("click", () => {
+        const index = parseInt(item.dataset.index);
+        const data = anecdotas[index];
+
+        document.getElementById("detalle-titulo").textContent = data.titulo;
+        document.getElementById("detalle-texto").textContent = data.historia;
+
+        document.getElementById("anecdotas-list").classList.add("hidden");
+        document.getElementById("anecdota-detalle").classList.remove("hidden");
+        document.getElementById("btn-volver").classList.remove("hidden");
+      });
+    });
+  });
+
+  document.getElementById("btn-volver").addEventListener("click", () => {
+    document.getElementById("anecdota-detalle").classList.add("hidden");
+    document.getElementById("anecdotas-list").classList.remove("hidden");
+    document.getElementById("btn-volver").classList.add("hidden");
+  });
+</script>
+
+<style>
+  .tab-button {
+    border: 1px solid #018a18;
+    padding: 4px 8px;
+    border-radius: 0.5rem;
+    font-weight: 300;
+    color: #018a18;
+  }
+
+  .tab-button.active {
+    background-color: #018a18;
+    color: #e7ebe7;
+  }
+
+  .tab-panel.hidden {
+    display: none;
+  }
+</style>
