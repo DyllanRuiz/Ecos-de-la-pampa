@@ -20,33 +20,28 @@ const imagenes = [
       src={src}
       alt={`Imagen carrusel ${i + 1}`}
       loading="lazy"
-      class={`absolute top-0 left-0 w-full h-full object-cover rounded-2xl border-4 border-primary-300 opacity-0 transition-opacity duration-1000 ease-in-out ${
-        i === 0 ? "opacity-70 z-10" : ""
-      }`}
+      class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl border-4 border-primary-300 transition-opacity duration-1000 ease-in-out"
+      style={i === 0 ? "opacity: 0.67;" : "opacity: 0;"}
       draggable="false"
     />
   ))}
 </div>
 
 <script>
-  // Encapsular todo en DOMContentLoaded para asegurar que el DOM esté listo
   document.addEventListener("DOMContentLoaded", () => {
-    const imgs = document.querySelectorAll("#carrusel img");
+    const carrusel = document.getElementById("carrusel");
+    if (!carrusel) return;
+
+    const imgs = carrusel.querySelectorAll("img");
     let index = 0;
+    const intervalTime = 5000; 
 
-    if (imgs.length === 0) return; 
-
-    setInterval(() => {
-  
-      imgs[index].classList.remove("opacity-70", "z-10");
-      imgs[index].classList.add("opacity-0");
-
- 
+    function mostrarSiguienteImagen() {
+      imgs[index].style.opacity = "0";
       index = (index + 1) % imgs.length;
+      imgs[index].style.opacity = "0.67";
+    }
 
-
-      imgs[index].classList.remove("opacity-0");
-      imgs[index].classList.add("opacity-70", "z-10");
-    }, 8000);
+    setInterval(mostrarSiguienteImagen, intervalTime);
   });
 </script>

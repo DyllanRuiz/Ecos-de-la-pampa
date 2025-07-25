@@ -3,7 +3,6 @@ const { personaje } = Astro.props;
 import { CircleArrowLeft } from "@lucide/astro";
 ---
 
-
 <section
   class="w-11/12 h-[652px] flex flex-col gap-3 mx-auto bg-graytone-100 rounded-2xl py-[30px] px-6 md:w-[575px]"
 >
@@ -13,12 +12,20 @@ import { CircleArrowLeft } from "@lucide/astro";
       class="mb-4 text-sm text-primary underline hover:text-secondary hidden"
       aria-label="Botón para volver"
     >
-      <CircleArrowLeft size={26} class="inline mr-1" color="#018A18"/>
+      <CircleArrowLeft size={26} class="inline mr-1" color="#018A18" />
     </button>
   </div>
   <div class="flex justify-center gap-2 mb-2">
-    <button id="tab-info" class="tab-button active" aria-label="Botón de información">Información</button>
-    <button id="tab-anecdotas" class="tab-button" aria-label="Botón de anécdotas">Anécdotas</button>
+    <button
+      id="tab-info"
+      class="tab-button active"
+      aria-label="Botón de información">Información</button
+    >
+    <button
+      id="tab-anecdotas"
+      class="tab-button"
+      aria-label="Botón de anécdotas">Anécdotas</button
+    >
   </div>
 
   <hr class="border-t border-[#8A1801] mb-4" />
@@ -91,12 +98,23 @@ import { CircleArrowLeft } from "@lucide/astro";
     const tabAnecdotas = document.getElementById("tab-anecdotas");
     const panelInfo = document.getElementById("info-panel");
     const panelAnecdotas = document.getElementById("anecdotas-panel");
+    const btnVolver = document.getElementById("btn-volver");
+    const anecdotasList = document.getElementById("anecdotas-list");
+    const anecdotaDetalle = document.getElementById("anecdota-detalle");
+    const detalleTitulo = document.getElementById("detalle-titulo");
+    const detalleTexto = document.getElementById("detalle-texto");
 
     tabInfo.addEventListener("click", () => {
       panelInfo.classList.remove("hidden");
       panelAnecdotas.classList.add("hidden");
       tabInfo.classList.add("active");
       tabAnecdotas.classList.remove("active");
+
+      btnVolver.classList.add("hidden");
+
+      // Además, si estaba en detalle de anécdota, lo oculta y muestra lista
+      anecdotaDetalle.classList.add("hidden");
+      anecdotasList.classList.remove("hidden");
     });
 
     tabAnecdotas.addEventListener("click", () => {
@@ -104,33 +122,38 @@ import { CircleArrowLeft } from "@lucide/astro";
       panelAnecdotas.classList.remove("hidden");
       tabInfo.classList.remove("active");
       tabAnecdotas.classList.add("active");
+
+      btnVolver.classList.add("hidden");
+      anecdotaDetalle.classList.add("hidden");
+      anecdotasList.classList.remove("hidden");
     });
 
-    // Muestra detalle de anécdota
+    // Cargar anécdotas desde data attribute
     const anecdotas = JSON.parse(
-      document
-        .getElementById("anecdotas-list")
-        .getAttribute("data-anecdotas") || "[]"
+      anecdotasList.getAttribute("data-anecdotas") || "[]"
     );
+
+    // Añadir click a cada item anécdota para mostrar detalle
     document.querySelectorAll(".anecdota-item").forEach((item) => {
       item.addEventListener("click", () => {
         const index = parseInt(item.dataset.index);
         const data = anecdotas[index];
 
-        document.getElementById("detalle-titulo").textContent = data.titulo;
-        document.getElementById("detalle-texto").textContent = data.historia;
+        detalleTitulo.textContent = data.titulo;
+        detalleTexto.textContent = data.historia;
 
-        document.getElementById("anecdotas-list").classList.add("hidden");
-        document.getElementById("anecdota-detalle").classList.remove("hidden");
-        document.getElementById("btn-volver").classList.remove("hidden");
+        anecdotasList.classList.add("hidden");
+        anecdotaDetalle.classList.remove("hidden");
+        btnVolver.classList.remove("hidden");
       });
     });
-  });
 
-  document.getElementById("btn-volver").addEventListener("click", () => {
-    document.getElementById("anecdota-detalle").classList.add("hidden");
-    document.getElementById("anecdotas-list").classList.remove("hidden");
-    document.getElementById("btn-volver").classList.add("hidden");
+    // Botón volver a lista de anécdotas
+    btnVolver.addEventListener("click", () => {
+      anecdotaDetalle.classList.add("hidden");
+      anecdotasList.classList.remove("hidden");
+      btnVolver.classList.add("hidden");
+    });
   });
 </script>
 
