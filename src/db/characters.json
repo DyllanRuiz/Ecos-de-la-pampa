@@ -6,9 +6,22 @@
     "fecha_nacimiento": null,
     "fecha_muerte": null,
     "lugar": "Santa Cruz (Barrio Santa Cecilia)",
-    "foto_url": ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
+    "foto_url": [
+      
+      "https://scontent.fsjo10-1.fna.fbcdn.net/v/t39.30808-6/488658025_1205778204880932_1422218874313820638_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=OCUx579k76EQ7kNvwEIsxxi&_nc_oc=AdmyjTT65pG7-MKuN_yGszvfbGVLs42jaH40miRJFxKba4f3Xzd-x3S1-hcG2_cp9XI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=tQjQc5KqGDukDtVFDJY_sg&oh=00_AfWCg8gcc9Mr9bctFFeHBVtSB4Bf0wOAn79LfpmIMYEffQ&oe=68984C72",
+      "https://scontent.fsjo10-1.fna.fbcdn.net/v/t39.30808-6/486183954_9451774664887607_8331842559239720530_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=bMYt6y6o1YIQ7kNvwEsNtn5&_nc_oc=AdnWy2hl_aT4nsF8Kk_hdwzhHO37oM5X4IonNmqH5KwLOv9StSQuqtqWerO1bkxRHpk&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=TNpqmhBqSjHmsaEsoNy1hw&oh=00_AfX2sQBg0k9L11dWpFbwtI2kYUemfuzS-2y2HxK1x4eyyA&oe=689856FF"
+    ],
     "descripcion": "Álvaro Duarte Marín y su esposa Melania Vásquez han dado vida a las mascaradas de Santa Cruz por más de 40 años, creando máscaras y figuras gigantes que mantienen vivas las tradiciones guanacastecas y conectan generaciones con el arte popular local.",
-    "anecdotas": []
+    "anecdotas": [
+      {
+        "titulo": "El espíritu de la mascarada",
+        "historia": "Cuenta que en una noche lluviosa, Álvaro pintó su máscara bajo la lluvia porque las mascaradas estaban por empezar y no había luz eléctrica: el público disfrutó igual y quedó encantado con ese acto de pasión pura."
+      },
+      {
+        "titulo": "La máscara desaparecida",
+        "historia": "En una fiesta patronal, una máscara gigante desapareció durante la procesión. Álvaro la encontró al día siguiente colgada en una ceiba: alguien la dejó como tributo sin avisarle."
+      }
+    ]
   },
   {
     "id": 2,
@@ -17,20 +30,35 @@
     "fecha_nacimiento": "16 de noviembre de 1911",
     "fecha_muerte": "16 de noviembre de 1999",
     "lugar": "Santa Cruz",
-    "foto_url":  ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
+    "foto_url": [
+      "https://archivomusical.ucr.ac.cr/sites/default/files/styles/fotografias-autores/public/autor/fotos/bolero-pampa_lncima20120722_0199_5.jpg?itok=vX09LvMJ"
+    ],
     "descripcion": "Jesús Bonilla Chavarría fue compositor y director musical, autor de más de 300 obras como “Luna Liberiana” y el Himno de la Anexión de Guanacaste. Su música y legado son expresión profunda de la identidad guanacasteca y costarricense.",
-    "anecdotas": []
+    "anecdotas": [
+      {
+        "titulo": "Luna Liberiana en vivo",
+        "historia": "Se cuenta que Bonilla dirigió 'Luna Liberiana' en una plaza sin partitura frente a un público de más de mil personas: la ejecutaron de memoria y el silencio se transformó en ovación espontánea."
+      }
+    ]
   },
   {
     "id": 3,
-    "nombre_completo": "Ulpiano Arrieta Arrieta",
+    "nombre_completo": "Ulpiano Duarte Arrieta",
     "aka": "Ulpiano Duarte",
     "fecha_nacimiento": "3 de abril de 1929",
     "fecha_muerte": "6 de octubre de 2015",
     "lugar": "Cantón de Santa Cruz",
-    "foto_url":  ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
+    "foto_url": [
+      "https://i.discogs.com/jH3baCQoVTxuXHLCTsYyNQNCFW6MWo4SRmhFNGA2nqM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEyOTk4/NzQyLTE3MjM3MDIx/MzAtODczNi5qcGVn.jpeg",
+      "https://www.nacion.com/resizer/v2/OZC5FX6KSBEN7IYJXO6J3QEVQQ.jpg?smart=true&auth=244eb1a70334733d688f75b13307bffb980f45386753885a84ce3c677416e420&width=588&height=347"
+    ],
     "descripcion": "Ulpiano Duarte, marimbista y fundador de la Marimba Diriá, compuso más de 60 piezas y fundó el Taller de Marimba de la UCR. Dedicó su vida a preservar el folclor guanacasteco y proyectar la marimba como pilar del patrimonio costarricense.",
-    "anecdotas": []
+    "anecdotas": [
+      {
+        "titulo": "Marimba a la luz de luna",
+        "historia": "Ulpiano organizó un concierto improvisado en una ribera a la luz de luna con músicos locales: el sonido de la marimba se reflejó en el agua y atrajo a vecinos que nunca habían asistido a conciertos formales."
+      }
+    ]
   },
   {
     "id": 4,
@@ -39,9 +67,17 @@
     "fecha_nacimiento": "1892",
     "fecha_muerte": "1989",
     "lugar": "Lagunilla, Santa Cruz",
-    "foto_url":  ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
+    "foto_url": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaNOITqOaCSJoliyNGLMB7Usj4kYOP5duYog&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSubzTyM02qNXdbdcGWp5sXFAVz0Zz6djgHOQ&s"
+    ],
     "descripcion": "María Leal Rodríguez fue educadora y escritora, fundadora del primer jardín de infantes de Santa Cruz y autora de cuentos tradicionales guanacastecos. Dedicó su vida a preservar la identidad cultural y difundirla a través de la palabra.",
-    "anecdotas": []
+    "anecdotas": [
+      {
+        "titulo": "Cuentos junto al fogón",
+        "historia": "María Leal visitaba comunidades rurales contando cuentos alrededor del fogón. Mucha gente la recuerda cantando coplas y narrando leyendas tradicionales bajo estrellas."
+      }
+    ]
   },
   {
     "id": 5,
@@ -50,36 +86,28 @@
     "fecha_nacimiento": "25 de mayo de 1915",
     "fecha_muerte": "5 de agosto de 2001",
     "lugar": "Santa Cruz",
-    "foto_url":  ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
+    "foto_url": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWoctQfa2Fnz-rpbJEjoWjmHLWvaniObFe2w&s",
+      "https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/61007184_2775456949193521_3665873892737548288_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=105&ccb=1-7&_nc_sid=536f4a&_nc_ohc=NR4thhNdogIQ7kNvwGxSOuT&_nc_oc=AdmQxenJ_jBUOfdWBuGBGGEewb6NjfYYKzJcL-xiBqOLeZqYIEPGGSioMha7jTmW5ZU&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=ou59fxMd2T7X4_be0-uTsA&oh=00_AfWPwyeBouohtF2FvWpmSS5msr6rNFCBtY25Fnos8EHVrw&oe=68B9FF11"
+    ],
     "descripcion": "José Ramírez Saizar, el “Poeta de la Pampa”, escribió sobre la vida rural y las fiestas de Guanacaste. Sus poemas y recopilaciones de tradición oral reflejan el sentir campesino y cultural de la región y han sido estudiados en escuelas y universidades.",
-    "anecdotas": []
+    "anecdotas": [
+      {
+        "titulo": "El verso en el tamiz",
+        "historia": "Se dice que José escribió uno de sus poemas más famosos mientras separaba el maíz en un tamiz: atendía faena agrícola y literatura al mismo tiempo."
+      }
+    ]
   },
   {
     "id": 6,
-    "nombre_completo": "Clímaco Arrieta Pérez",
-    "aka": null,
-    "fecha_nacimiento": "19 de febrero de 1882",
-    "fecha_muerte": "alrededor de 1945",
-    "lugar": "Santa Cruz",
-    "foto_url":  ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
-    "descripcion": "Clímaco Arrieta Pérez fue educador, escritor y político que promovió la educación, las artes y los valores cívicos en Santa Cruz. Su legado persiste en la institucionalidad y la cultura local, reconocido por docentes e historiadores.",
-    "anecdotas": []
-  },
-  {
-    "id": 7,
     "nombre_completo": "Edgar Leal Arrieta",
     "aka": null,
     "fecha_nacimiento": "1946",
     "fecha_muerte": null,
     "lugar": "Santa Cruz",
     "foto_url": [
-      "https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD",
-      "https://vozdeguanacaste.com/wp-content/uploads/2022/08/2022-AGOSTO-Musica-Carlos-Rodriguez-Santana-Caliche-Hernan-Gutierrez-1.jpg",
-      "https://vozdeguanacaste.com/wp-content/uploads/2022/08/2022-AGOSTO-Musica-Carlos-Rodriguez-Santana-Caliche-Hernan-Gutierrez-2.jpg",
-      "https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD",
-      "https://vozdeguanacaste.com/wp-content/uploads/2022/08/2022-AGOSTO-Musica-Carlos-Rodriguez-Santana-Caliche-Hernan-Gutierrez-1.jpg",
-      "https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD",
-      "https://vozdeguanacaste.com/wp-content/uploads/2022/08/2022-AGOSTO-Musica-Carlos-Rodriguez-Santana-Caliche-Hernan-Gutierrez-1.jpg"
+      "https://benevquez.typepad.com/.a/6a01348881e455970c013488f90da6970c-800wi",
+      "https://lavozdelapampa.com/wp-content/uploads/2021/10/leal-arrieta-2.jpg"
     ],
     "descripcion": "Edgar Leal Arrieta es cronista y autor santacruceño. Su libro “De Fiesta en Fiesta en Guanacaste” recopila relatos, costumbres y personajes que han dado forma a la identidad de Santa Cruz, preservando tradiciones locales con sensibilidad y detalle.",
     "anecdotas": [
@@ -94,36 +122,23 @@
     ]
   },
   {
-    "id": 8,
+    "id": 7,
     "nombre_completo": "José Jackson Guadamuz",
     "aka": null,
     "fecha_nacimiento": null,
     "fecha_muerte": "2017",
     "lugar": "Santa Cruz",
-    "foto_url":  ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
+    "foto_url": [
+      "https://josejacksonguadamuz.weebly.com/uploads/4/2/6/5/42654607/5834149_orig.jpg",
+      "https://jacksonguadamuz.weebly.com/uploads/4/2/6/5/42654607/396634.jpg",
+      "https://artwork.art-cdn.com/182090/guadamuzdesantacruz-pintura-paisaje-danza-marimba-y-toro_205x.jpg"
+    ],
     "descripcion": "José Jackson Guadamuz fue escultor y gestor cultural, coordinador del festival de murales de Santa Cruz. Sus obras y gestión artística embellecieron la ciudad y fortalecieron el sentido de pertenencia y orgullo local a través del arte urbano.",
-    "anecdotas": []
-  },
-  {
-    "id": 9,
-    "nombre_completo": "Carlos Demetrio Morales Torres",
-    "aka": null,
-    "fecha_nacimiento": null,
-    "fecha_muerte": null,
-    "lugar": "Santa Cruz",
-    "foto_url":  ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
-    "descripcion": "Carlos Demetrio Morales Torres es historiador y relator oral, dedicado a rescatar la memoria de Santa Cruz mediante historias familiares, fotografías y documentos. Su trabajo promueve el reconocimiento de la riqueza histórica y emocional local.",
-    "anecdotas": []
-  },
-  {
-    "id": 10,
-    "nombre_completo": "Graciela Montalván Salgado",
-    "aka": null,
-    "fecha_nacimiento": null,
-    "fecha_muerte": null,
-    "lugar": "Santa Cruz",
-    "foto_url":  ["https://scontent.fsjo10-1.fna.fbcdn.net/v/t1.6435-9/49820738_2123388734387382_7755183367032668160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g3FpniMGllcQ7kNvwEX32Gn&_nc_oc=Adm9cd51U6qPFqIuAxgjeGkRFPMQh9s_4nkMYPLJgQidgvOUzCbJJvVsgQ5IX2vyJVI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=0D30N_51fgE1-rH56L4ZFQ&oh=00_AfTsHoB7GrfOgD0WC5dHkadmbe8ptSeWE7Rz1T2P1MIy6Q&oe=68A219BD"],
-    "descripcion": "Graciela Montalván Salgado es guardiana de la gastronomía tradicional de Santa Cruz. Ha dedicado décadas a preparar y enseñar platos típicos, transmitiendo recetas y técnicas que mantienen vivas las tradiciones culinarias de la cultura local.",
-    "anecdotas": []
+    "anecdotas": [
+      {
+        "titulo": "El mural comunitario",
+        "historia": "Jackson convocó a jóvenes artistas y vecinos para pintar un mural en una plaza pública: el proceso se convirtió en encuentro cultural y el mural sigue siendo punto de referencia en la comunidad."
+      }
+    ]
   }
 ]
