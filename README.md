@@ -11,7 +11,7 @@ Crear un archivo cultural y afectivo de los personajes, saberes y tradiciones po
 A través de esta iniciativa, se promueve:
 
 - 📜 La conservación de historias de vida y expresiones culturales.
-- 🪅 La visibilización de saberes tradicionales y oficios locales.
+- 👀 La visibilización de saberes tradicionales y oficios locales.
 - 🗣️ La participación de la comunidad en la construcción de su propia memoria colectiva.
 
 ---
