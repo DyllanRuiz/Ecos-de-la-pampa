@@ -48,10 +48,13 @@ import { CircleArrowLeft } from "@lucide/astro";
       <strong>Fecha de nacimiento:</strong>
       {personaje.fecha_nacimiento}
     </p>
-    <p class="font-normal text-xl text-center">
-      <strong>Vecino de:</strong>
-      {personaje.lugar}
-    </p>
+    {
+      <personaje class="fecha_muerte"></personaje> && (
+        <p class="font-normal text-xl text-center">
+          <strong>Fecha de fallecimiento:</strong> {personaje.fecha_muerte}
+        </p>
+      )
+    }
     <p class="font-normal text-xl text-center">
       <strong>Breve descripción:</strong>
       {personaje.descripcion}
