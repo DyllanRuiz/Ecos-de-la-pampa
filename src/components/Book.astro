@@ -32,7 +32,10 @@ import { CircleArrowLeft } from "@lucide/astro";
   <hr class="border-t border-[#8A1801] mb-4" />
 
   <!-- Panel de información -->
-  <div id="info-panel" class="tab-panel flex flex-col gap-[20px]">
+<div
+  id="info-panel"
+  class="tab-panel flex flex-col gap-[20px] h-[652px] overflow-y-auto"
+>
     <p class="font-normal text-xl text-center">
       <strong>Nombre:</strong>
       {personaje.nombre_completo}
@@ -62,7 +65,7 @@ import { CircleArrowLeft } from "@lucide/astro";
   </div>
 
   <!-- Panel de anécdotas -->
-  <div id="anecdotas-panel" class="tab-panel hidden">
+  <div id="anecdotas-panel" class="tab-panel h-[652px] hidden">
     <ul
       id="anecdotas-list"
       data-anecdotas={JSON.stringify(personaje.anecdotas)}
@@ -179,16 +182,37 @@ import { CircleArrowLeft } from "@lucide/astro";
     display: none;
   }
 
-  section::-webkit-scrollbar {
-  width: 3px;
-  height: 3px;
+#info-panel {
+  min-height: 400;
+  max-height: 652px; /* o el tamaño que quieras */
+  overflow-y: auto;
 }
-section::-webkit-scrollbar-thumb {
-  background: #018a18;
-  border-radius: 16px;
+
+/* Scrollbar para navegadores WebKit (Chrome, Edge, Safari) */
+#info-panel::-webkit-scrollbar {
+  width: 8px;
 }
-section::-webkit-scrollbar-thumb:hover {
-  background: #999;
+
+#info-panel::-webkit-scrollbar-track {
+  background: transparent;
 }
+
+#info-panel::-webkit-scrollbar-thumb {
+  background-color: #018a18; /* verde */
+  border-radius: 10px;
+  border: 2px solid transparent; /* espacio entre thumb y track */
+  background-clip: content-box;
+}
+
+#info-panel::-webkit-scrollbar-thumb:hover {
+  background-color: #025d02; /* verde más oscuro al hover */
+}
+
+/* Scrollbar para Firefox */
+#info-panel {
+  scrollbar-width: thin;
+  scrollbar-color: #018a18 transparent;
+}
+
 
 </style>
