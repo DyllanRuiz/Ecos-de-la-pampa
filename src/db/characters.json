@@ -7,7 +7,6 @@
     "fecha_muerte": null,
     "lugar": "Santa Cruz (Barrio Santa Cecilia)",
     "foto_url": [
-      
       "https://scontent.fsjo10-1.fna.fbcdn.net/v/t39.30808-6/488658025_1205778204880932_1422218874313820638_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=OCUx579k76EQ7kNvwEIsxxi&_nc_oc=AdmyjTT65pG7-MKuN_yGszvfbGVLs42jaH40miRJFxKba4f3Xzd-x3S1-hcG2_cp9XI&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=tQjQc5KqGDukDtVFDJY_sg&oh=00_AfWCg8gcc9Mr9bctFFeHBVtSB4Bf0wOAn79LfpmIMYEffQ&oe=68984C72",
       "https://scontent.fsjo10-1.fna.fbcdn.net/v/t39.30808-6/486183954_9451774664887607_8331842559239720530_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=bMYt6y6o1YIQ7kNvwEsNtn5&_nc_oc=AdnWy2hl_aT4nsF8Kk_hdwzhHO37oM5X4IonNmqH5KwLOv9StSQuqtqWerO1bkxRHpk&_nc_zt=23&_nc_ht=scontent.fsjo10-1.fna&_nc_gid=TNpqmhBqSjHmsaEsoNy1hw&oh=00_AfX2sQBg0k9L11dWpFbwtI2kYUemfuzS-2y2HxK1x4eyyA&oe=689856FF"
     ],
@@ -138,6 +137,30 @@
       {
         "titulo": "El mural comunitario",
         "historia": "Jackson convocó a jóvenes artistas y vecinos para pintar un mural en una plaza pública: el proceso se convirtió en encuentro cultural y el mural sigue siendo punto de referencia en la comunidad."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "nombre_completo": "Andelino Espinoza Espinoza",
+    "aka": "Chancleta negra",
+    "fecha_nacimiento": "16 de diciembre de 1911",
+    "fecha_muerte": "9 de marzo de 2004",
+    "lugar": "Santa Cruz",
+    "foto_url": [
+      "https://i.ibb.co/SDMjWMRs/Adelino.jpg",
+      "https://i.ibb.co/C3fSW0xY/Adelino-bailando.jpg"
+    ],
+    "descripcion": "Andelino Espinoza Espinoza, conocido por todos como \"Chancleta Negra\", fue uno de esos personajes entrañables que marcaron la vida cotidiana de Santa Cruz. Reconocido bueyero, su figura es recordada con cariño por los habitantes más longevos del cantón, quienes lo vieron durante décadas recorriendo calles y caminos, jalando leña, basura, arena y carnes. Estas últimas eran llevadas para ser procesadas en el antiguo rastro o en la antigua escuela Estocolmo. Pero Andelino no solo destacaba por su oficio. Era también un apasionado bailarín, siempre dispuesto a sumarse a la música y al festejo. Su presencia en las fiestas típicas de Santa Cruz y en las procesiones del Santo Cristo de Esquipulas era casi una certeza: allí, entre marimbas y pólvora, Chancleta Negra bailaba con alegría contagiosa, convirtiéndose en un símbolo de la vitalidad y el espíritu festivo santacruceño.",
+    "anecdotas": [
+   
+      {
+        "titulo": "El día que perdió la chaqueta y ganó la chancleta.",
+        "historia": "Por sorprendente que parezca, el verdadero apodo de Don Andelino no era “Chancleta Negra”, sino “Chaqueta Negra”. Este sobrenombre se lo ganó por su forma particular de vestir cuando llevaba los bueyes. Sin embargo, los niños pequeños que lo ayudaban tenían dificultad para pronunciar “Chaqueta Negra” y, entre risas y confusiones, comenzaron a decir “Chancleta Negra”. Con el tiempo, este nuevo nombre se hizo tan popular que terminó por inmortalizarlo."
+      },
+         {
+        "titulo": "Paseo con sabor a infancia.",
+        "historia": "Don Andelino era un hombre al que le encantaba bromear con los niños del barrio. Les sacaba la lengua, les hacía ruidos extraños y buscaba asustarlos de forma juguetona. Sin embargo, detrás de esas travesuras había un corazón bondadoso. Muchos de esos niños le ayudaban a cargar leña, arena o cualquier cosa que él necesitara, y a cambio, él los llevaba al río a nadar o a dar un paseo en su carreta, convirtiendo cada encargo en una pequeña aventura."
       }
     ]
   }

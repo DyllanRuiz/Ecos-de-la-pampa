@@ -4,8 +4,9 @@ import { CircleArrowLeft } from "@lucide/astro";
 ---
 
 <section
-  class="w-11/12 h-[652px] flex flex-col gap-3 mx-auto bg-graytone-100 rounded-2xl py-[30px] px-6 md:w-[575px]"
+  class="w-11/12 max-h-[652px] flex flex-col gap-3 mx-auto bg-graytone-100 rounded-2xl py-[30px] px-6 md:w-[575px] overflow-y-auto"
 >
+
   <div class="justify-start absolute">
     <button
       id="btn-volver"
@@ -174,4 +175,17 @@ import { CircleArrowLeft } from "@lucide/astro";
   .tab-panel.hidden {
     display: none;
   }
+
+  section::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+section::-webkit-scrollbar-thumb {
+  background: #018a18;
+  border-radius: 16px;
+}
+section::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
 </style>
