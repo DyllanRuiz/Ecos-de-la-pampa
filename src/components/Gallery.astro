@@ -1,5 +1,5 @@
 ---
-import {  Maximize2 } from "@lucide/astro";
+import { Maximize2, ChevronLeft, ChevronRight, X } from "@lucide/astro";
 
 const { personajes } = Astro.props;
 const fotos = personajes.foto_url || [];
@@ -17,7 +17,7 @@ const initialImage = fotos.length > 0 ? fotos[0] : placeholder;
     Galería
   </h2>
 
-  <!-- Imagen principal con botones -->
+  <!-- Imagen principal con botón -->
   <div class="relative flex items-center justify-center h-96 rounded-2xl overflow-hidden md:w-[500px] md:h-[570px]">
     <img
       id="main-image"
@@ -26,21 +26,18 @@ const initialImage = fotos.length > 0 ? fotos[0] : placeholder;
       class="object-cover h-[400px] w-[340px] transition duration-500 ease-in-out rounded-2xl md:w-[500px] md:h-[570px]"
     />
 
-    <!-- Controles flotantes -->
     <div class="absolute top-3 right-3 flex gap-2">
-
-      <!-- Botón Pantalla Completa -->
       <button
-        id="fullscreen-btn"
+        id="open-modal-btn"
         class="p-2 bg-black/50 hover:bg-black/70 rounded-full text-white transition"
-        title="Ver en pantalla completa"
+        title="Ver imagen en grande"
       >
         <Maximize2 class="w-5 h-5" />
       </button>
     </div>
   </div>
 
-  <!-- Carrusel miniaturas -->
+  <!-- Carrusel de miniaturas -->
   <div class="relative mt-4 w-full max-w-xs mx-auto flex justify-center items-center md:w-[500px]">
     {
       fotos.length > 3 && (
@@ -67,10 +64,8 @@ const initialImage = fotos.length > 0 ? fotos[0] : placeholder;
               alt={`Miniatura ${i + 1}`}
               draggable="false"
               loading="lazy"
-              onload="this.classList.remove('skeleton')"
-              class:list={["skeleton"]}
-              data-index={i}
               class="w-16 h-16 object-cover rounded cursor-pointer border-2 border-transparent transition"
+              data-index={i}
               aria-selected={i === 0 ? "true" : "false"}
             />
           )
@@ -92,103 +87,89 @@ const initialImage = fotos.length > 0 ? fotos[0] : placeholder;
   </div>
 </section>
 
+<!-- Modal de imagen -->
+<div id="image-modal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+  <button id="close-modal" class="absolute top-4 right-4 text-white p-2">
+    <X class="w-6 h-6" />
+  </button>
+
+  <button id="prev-image" class="absolute left-4 text-white p-2">
+    <ChevronLeft class="w-8 h-8" />
+  </button>
+
+  <img id="modal-image" src="" alt="Imagen en grande" class="max-w-full max-h-full object-contain rounded-lg shadow-lg" />
+
+  <button id="next-image" class="absolute right-4 text-white p-2">
+    <ChevronRight class="w-8 h-8" />
+  </button>
+</div>
+
 <script is:inline>
   document.addEventListener("DOMContentLoaded", () => {
     const mainImage = document.getElementById("main-image");
     const thumbnailsContainer = document.getElementById("thumbnails-container");
     const thumbnails = Array.from(thumbnailsContainer.querySelectorAll("img[data-index]"));
-    const fullscreenBtn = document.getElementById("fullscreen-btn");
 
     let selectedIndex = 0;
 
     function updateSelected(newIndex) {
       if (newIndex < 0 || newIndex >= thumbnails.length) return;
+      selectedIndex = newIndex;
       const newSrc = thumbnails[newIndex].src;
       mainImage.src = newSrc;
- 
-
       thumbnails.forEach((thumb, i) => {
-        if (i === newIndex) {
-          thumb.classList.add("border-primary-300");
-          thumb.classList.remove("border-transparent");
-          thumb.setAttribute("aria-selected", "true");
-          selectedIndex = newIndex;
-
-          const containerRect = thumbnailsContainer.getBoundingClientRect();
-          const thumbRect = thumb.getBoundingClientRect();
-          const scrollLeft = thumbnailsContainer.scrollLeft;
-          const offset = thumbRect.left - containerRect.left;
-
-          thumbnailsContainer.scrollTo({
-            left: scrollLeft + offset - thumbnailsContainer.clientWidth / 2 + thumb.offsetWidth / 2,
-            behavior: "smooth",
-          });
-        } else {
-          thumb.classList.remove("border-primary-300");
-          thumb.classList.add("border-transparent");
-          thumb.setAttribute("aria-selected", "false");
-        }
+        thumb.classList.toggle("border-primary-300", i === newIndex);
+        thumb.classList.toggle("border-transparent", i !== newIndex);
       });
     }
-
-    updateSelected(0);
 
     thumbnails.forEach((thumb, i) => {
       thumb.addEventListener("click", () => updateSelected(i));
     });
 
-    fullscreenBtn.addEventListener("click", () => {
-      if (mainImage.requestFullscreen) {
-        mainImage.requestFullscreen();
-      } else if (mainImage.webkitRequestFullscreen) {
-        mainImage.webkitRequestFullscreen();
-      }
+    // Modal
+    const modal = document.getElementById("image-modal");
+    const modalImage = document.getElementById("modal-image");
+    const openModalBtn = document.getElementById("open-modal-btn");
+    const closeModalBtn = document.getElementById("close-modal");
+    const prevBtn = document.getElementById("prev-image");
+    const nextBtn = document.getElementById("next-image");
+
+    function openModal() {
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      modalImage.src = thumbnails[selectedIndex].src;
+    }
+
+    function closeModal() {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+
+    function showPrevImage() {
+      updateSelected((selectedIndex - 1 + thumbnails.length) % thumbnails.length);
+      modalImage.src = thumbnails[selectedIndex].src;
+    }
+
+    function showNextImage() {
+      updateSelected((selectedIndex + 1) % thumbnails.length);
+      modalImage.src = thumbnails[selectedIndex].src;
+    }
+
+    openModalBtn.addEventListener("click", openModal);
+    closeModalBtn.addEventListener("click", closeModal);
+    prevBtn.addEventListener("click", showPrevImage);
+    nextBtn.addEventListener("click", showNextImage);
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closeModal();
     });
 
-    const leftArrow = document.getElementById("left-arrow");
-    const rightArrow = document.getElementById("right-arrow");
-
-    if (leftArrow && rightArrow) {
-      const scrollAmount = 60;
-      leftArrow.addEventListener("click", () => {
-        thumbnailsContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-      });
-      rightArrow.addEventListener("click", () => {
-        thumbnailsContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
-      });
-    }
+    updateSelected(0);
   });
 </script>
 
 <style>
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .skeleton {
-    @apply bg-gray-300 animate-pulse rounded-lg;
-  }
-
-#main-image:fullscreen,
-#main-image:-webkit-full-screen {
-  width: 100vw !important;
-  height: 100vh !important;
-  max-width: 100vw !important;
-  max-height: 100vh !important;
-  object-fit: contain !important;
-  background-color: black;
-}
-
-@media (max-width: 640px) {
-  #main-image:fullscreen,
-  #main-image:-webkit-full-screen {
-    width: 100vw !important;
-    height: 100vh !important;
-  }
-}
-
-
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
 </style>
